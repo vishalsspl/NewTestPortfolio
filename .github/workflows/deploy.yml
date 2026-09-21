@@ -1,0 +1,30 @@
+name: Deploy Portfolio Locally
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Local IIS
+        shell: powershell
+        run: |
+          $source = "$env:GITHUB_WORKSPACE\"
+          $destination = "C:\Users\Shweta\Desktop\Vishal\Portfolio"
+
+          if (!(Test-Path $destination)) {
+              New-Item -ItemType Directory -Path $destination -Force
+          }
+
+          Copy-Item "$source\index.html" "$destination\" -Force
+          Copy-Item "$source\style.css" "$destination\" -Force
+          Copy-Item "$source\script.js" "$destination\" -Force
+
+          Write-Host "Portfolio deployed successfully!"
