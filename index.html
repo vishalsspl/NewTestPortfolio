@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo">Vishal<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Vishal</h1>
+        <h2>Backend Developer & Full-Stack Learner</h2>
+        <p class="hero-text">
+          I build practical web applications using modern backend and frontend technologies.
+          I enjoy solving problems, learning new tools, and turning ideas into useful products.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar">V</div>
+        <p>Building • Learning • Improving</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>A little about me</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I'm a developer interested in backend development, APIs, databases, cloud,
+          DevOps, and full-stack application development. I like working on real-world
+          projects and continuously improving my development and deployment skills.
+        </p>
+        <div class="info-box">
+          <p><strong>Focus:</strong> Web Development</p>
+          <p><strong>Experience:</strong> Project Based</p>
+          <p><strong>Location:</strong> India</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Technologies I work with</h2>
+      </div>
+      <div class="skills">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>React</span><span>Node.js</span><span>Express</span>
+        <span>FastAPI</span><span>PostgreSQL</span><span>Prisma</span>
+        <span>Git</span><span>GitHub</span><span>AWS</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Some things I've built</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>TaskFlow</h3>
+          <p>A project and task management application with teams, projects, notifications, timesheets, documents, and role-based permissions.</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>ReelForge</h3>
+          <p>A marketplace concept connecting clients with video creators for short-form reel projects, including bidding and payments.</p>
+          <div class="tags"><span>Next.js</span><span>FastAPI</span><span>Stripe</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Portfolio</h3>
+          <p>A lightweight responsive portfolio website built from scratch using only HTML, CSS, and JavaScript.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's connect</h2>
+      </div>
+      <p>If you'd like to discuss a project, collaboration, or development opportunity, feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Vishal. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
